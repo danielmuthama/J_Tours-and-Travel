@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+{% block content %}
+<div style="margin-top: -1.7%;">
+    <div style="background-image: url('/static/images/destine.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;">
+        <h1 style="font-weight:700; font-size:100px;padding-top: 9%;margin-left: 5%;">Tsavo East</h1>
+    </div>
+</div>
+<section style="padding-left: 10%;background-color: whitesmoke;clear: right;margin-top: -1.5%;">
+    <div style="float: right; padding-right: 10%; text-align: center;background-color: whitesmoke; margin-top: 25px;">
+        <div style="text-align: start; font-size: 14px;">
+            <h1><b>Why Book With Us</b></h1><br>
+            <p><i class="fas fa-dollar-sign"></i>No-hassle best price guarantee</p>
+            <hr>
+            <p><i class="fas fa-headphones"></i>Customer care available 24/7</p>
+            <hr>
+            <p><i class="fas fa-star"></i>Hand-picked Tours & Activities</p>
+            <hr>
+            <p><i class="fas fa-globe"></i>Free Travel Insureance</p>
+            <hr>
+        </div>
+    </div>
+    <div class="py-5" style="width:60%;">
+        <div class="card">
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <img src="{{url_for('static', filename='images/Tiger.jpeg')}}" class="w-100">
+                </div>
+                <div class="col-md-6 px-5">
+                    <div class="card-block px-3">
+                        <h1 class="card-text"> <b>5 Days Amboseli, Tsavo West & East Safari Package</b> </h1>
+                        <hr>
+                        <div style="text-align: center;">
+                            <h1><b>From $ 1580</b> </h1><br>
+                            <a href="/details/tsavoeast.html" class="btn btn-primary">VIEW DETAILS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="padding-left: 10%;background-color: whitesmoke;">
+    <div
+        style="float: right; text-align: center;background-color: rgb(13, 179, 245); margin-top: 25px;width: 25%; margin-right: 5%;">
+        <div style="text-align: center; font-size: 14px; color: white;">
+            <h1><b>Having any Question?</b></h1><br>
+            <p>Do not hesitate to give us a call. We are an expert team and we are happy to talk to you.</p><br>
+            <div style="color: yellow;">
+                <p><i class="fas fa-phone-alt"></i>+254 712 345</p><br>
+                <p><i class="far fa-envelope"></i><br> Customer@gmail.com</p><br>
+            </div>
+        </div>
+    </div>
+    <div class="py-5" style="width:60%;">
+        <div class="card">
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <img src="{{url_for('static', filename='images/Tiger.jpeg')}}" class="w-100">
+                </div>
+                <div class="col-md-6 px-5">
+                    <div class="card-block px-3">
+                        <h1 class="card-text"> <b>8 Days Masai Mara, Nakuru, Amboseli, Tsavo East & West Lodge
+                                Safari</b> </h1>
+                        <hr>
+                        <div style="text-align: center;">
+                            <h1><b>From $ 2050</b> </h1><br>
+                            <a href="/details/tsavomara.html" class="btn btn-primary">VIEW DETAILS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
+{% endblock %}
