@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div style="margin-top: -1.7%;">
+    <div style="background-image: url('/static/images/destine.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;">
+        <h1 style="font-weight:500; font-size:30px;padding-top: 15%;margin-left: 5%;">2 Days Mt Kenya Climbing & Hiking:
+            Sirimon Route</h1>
+    </div>
+</div>
+<div style="display: inline-flex; width: 100%; height: 7em;background-color: whitesmoke;padding: 3%;font-size: 15px;">
+    <p style="padding-right: 10%;padding-left: 5%;text-decoration: none;"><a href="#details"><b
+                style="color: black;">Details</b></a></p>
+    <p><a href="#itinery"><b style="color: black;">Itinery</b></a></p>
+    <p style="padding-left: 10%;"><a href="#photos"><b style="color: black;">Photos</b></a></p>
+</div>
+
+<div style="float: right; margin-right: 5%; text-align: center;background-color: rgb(250, 246, 246); 
+    margin-top: 25px;width:30%;">
+    <form action="reservation.php" method="post"><br>
+        <div class="container" style="text-align: start;">
+            <p style="color: tomato;font-size: 15px;">Price</p>
+            <h1 style="color: tomato;">From $ 1380</h1><br>
+            <p style="font-size: 18px;">Booking Form</p>
+        </div>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined" style="float: left;">
+            <label for="checkin-date">Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined" style="padding-top: 10px;">
+            <a href="#">
+                <button type="submit">PROCEED TO BOOKING</button>
+            </a>
+        </div>
+
+    </form>
+    <hr>
+    <style>
+        div.elem-group {
+            margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+            width: 49%;
+            float: right;
+            margin-left: 1%;
+        }
+
+
+        div.elem-group.inlined input {
+            width: 95%;
+            display: inline-block;
+        }
+
+        button {
+            height: 50px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+    </style><br><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(187, 172, 172); margin-top: 30%;width: 100%;">
+        <div style="text-align: start; font-size: 14px;margin-left: 10px;">
+            <h1><b>Why Book With Us</b></h1><br>
+            <p><i class="fas fa-dollar-sign"></i>No-hassle best price guarantee</p>
+            <hr>
+            <p><i class="fas fa-headphones"></i>Customer care available 24/7</p>
+            <hr>
+            <p><i class="fas fa-star"></i>Hand-picked Tours & Activities</p>
+            <hr>
+            <p><i class="fas fa-globe"></i>Free Travel Insureance</p>
+            <hr>
+        </div>
+    </div><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(13, 179, 245); margin-top: 30%;width: 100%;">
+        <div style="text-align: center; font-size: 14px; color: white;">
+            <h1><b>Having any Question?</b></h1><br>
+            <p>Do not hesitate to give us a call. We are an expert team and we are happy to talk to you.</p><br>
+            <div style="color: yellow;">
+                <p><i class="fas fa-phone-alt"></i>+254 712 345</p><br>
+                <p><i class="far fa-envelope"></i><br> Customer@gmail.com</p><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="font-size: 15px;padding-left: 7%;width: 60%;">
+    <h1 id="details"><b>Tour Details</b></h1><br>
+    <b>Safari price Cost Includes:</b><br>
+    <ul>
+        <li>Transport on custom made 8 seater tour van ideal for game viewing and photography</li>
+        <li>1litre of water per day during game drives</li>
+        <li>Accommodation in spacious double occupancy room</li>
+    </ul>
+    <br>
+    <b>Program costs exclude:</b>
+    <ul>
+        <li>Items of a personal nature</li>
+        <li>Tips, Laundry, Visas, International flights, Beverages/Drinks</li>
+        <li>Optional activities and excursions/tips</li>
+        <li>Travel insurance/personal accident cover (can be organized on request)</li>
+    </ul>
+    </p>
+    <h1 id="itinery"><b>Itinery</b></h1>
+    <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+            style="color: black;"><b>Day 1<span style="color: rgb(155, 192, 79);">Nairobi - Nanyuki - Old Moses
+                    Camp</span></b></a> </p>
+    <div>
+        <p>Depart from Nairobi at 0730hrs and transfer to Nanyuki, an approximately three-hour journey. You will later
+            transfer to Sirimon Gate and hike three to four hours (9kms) to Old Moses Mountain Hut (3300m) for your
+            overnight. Old Moses Camp is where you will acclimatize and be exposed to a variety of different vegetation.
+        </p><br>
+    </div>
+    <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+            style="color: black;"><b>Day 2<span style="color: rgb(155, 192, 79);">Old Moses Camp - Shipton's
+                    Camp</span></b></a> </p>
+    <div>
+        <p>After breakfast you will hike six to eight hours to Shipton’s Camp (4200m) through the Liki and Makinders
+            valley. Shipton’s Camp is located just below the main peaks of Mount Kenya and is used by most hikers
+            their final day before summiting. Here you can also sleep in bunkers within the mountain hut.
+        </p><br>
+    </div>
+    <h2 id="photos"><b>Photos</b></h2> <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{{url_for('static', filename='images/amb.jpg')}}" style="width:100%;height: 23em;">
+            </div>
+
+            <div class="item">
+                <img src="{{url_for('static', filename='images/giraffe.jpg')}}" style="width:100%;height: 23em;">
+            </div>
+
+            <div class="item">
+                <img src="{{url_for('static', filename='images/naks.jpg')}}" style="width:100%;height: 23em;">
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    </div><br><br>
+</div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div style="margin-top: -1.7%;">
+    <div style="background-image: url('/static/images/destine.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;">
+        <h1 style="font-weight:500; font-size:30px;padding-top: 15%;margin-left: 5%;">8 Days Masai Mara, Nakuru,
+            Amboseli, Tsavo East & West Lodge Safari <br> Package</h1>
+    </div>
+</div>
+<div style="display: inline-flex; width: 100%; height: 7em;background-color: whitesmoke;padding: 3%;font-size: 15px;">
+    <p style="margin-left: 5%;"><a href="#itinery"><b style="color: black;">Itinery</b></a></p>
+    <p style="padding-left: 10%;"><a href="#photos"><b style="color: black;">Photos</b></a></p>
+</div>
+
+<div style="float: right; margin-right: 5%; text-align: center;background-color: rgb(250, 246, 246); 
+    margin-top: 25px;width:30%;">
+    <form action="reservation.php" method="post"><br>
+        <div class="container" style="text-align: start;">
+            <p style="color: tomato;font-size: 15px;">Price</p>
+            <h1 style="color: tomato;">From $2,050</h1><br>
+            <p style="font-size: 18px;">Booking Form</p>
+        </div>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined" style="float: left;">
+            <label for="checkin-date">Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined" style="padding-top: 10px;">
+            <a href="#">
+                <button type="submit">PROCEED TO BOOKING</button>
+            </a>
+        </div>
+
+    </form>
+    <hr>
+    <style>
+        div.elem-group {
+            margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+            width: 49%;
+            float: right;
+            margin-left: 1%;
+        }
+
+
+        div.elem-group.inlined input {
+            width: 95%;
+            display: inline-block;
+        }
+
+        button {
+            height: 50px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+    </style><br><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(187, 172, 172); margin-top: 30%;width: 100%;">
+        <div style="text-align: start; font-size: 14px;margin-left: 10px;">
+            <h1><b>Why Book With Us</b></h1><br>
+            <p><i class="fas fa-dollar-sign"></i>No-hassle best price guarantee</p>
+            <hr>
+            <p><i class="fas fa-headphones"></i>Customer care available 24/7</p>
+            <hr>
+            <p><i class="fas fa-star"></i>Hand-picked Tours & Activities</p>
+            <hr>
+            <p><i class="fas fa-globe"></i>Free Travel Insureance</p>
+            <hr>
+        </div>
+    </div><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(13, 179, 245); margin-top: 30%;width: 100%;">
+        <div style="text-align: center; font-size: 14px; color: white;">
+            <h1><b>Having any Question?</b></h1><br>
+            <p>Do not hesitate to give us a call. We are an expert team and we are happy to talk to you.</p><br>
+            <div style="color: yellow;">
+                <p><i class="fas fa-phone-alt"></i>+254 712 345</p><br>
+                <p><i class="far fa-envelope"></i><br> Customer@gmail.com</p><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="font-size: 15px;padding-left: 7%;width: 60%;">
+    <h1 id="itinery"><b>Itinery</b></h1>
+    <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+            style="color: black;"><b>Day 1 <span style="color: rgb(155, 192, 79);">Nairobi-Masaai Mara</span></b></a>
+    </p>
+    <div>
+        <p>We will depart from Nairobi at 0700hrs and drive through the Eastern escarpment of the Great Rift
+            Valley underlined by scenic agricultural highlands. Our driver guide will make a brief stop at
+            the Great Rift Valley Viewpoint (Limuru) to give you a chance to enjoy a breathtaking view of
+            Mount Longonot from an altitude of 2200m above sea level.
+
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 2 <span style="color: rgb(155, 192, 79);">Masaai Mara Full Day
+                    </span></b></a> </p>
+
+        <p>After breakfast, you will spend the entire day exploring the reserve’s remarkably high concentration of game,
+            rich tree studded grassland and rolling hills.
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 3 <span style="color: rgb(155, 192, 79);">Masai Mara - Lake Nakuru
+                    </span></b></a> </p>
+        <p>Today we will have an early morning game drives then depart Masai Mara and drive to Lake Nakuru where we will
+            arrive in the evening. You will have lunch at Narok before proceeding to Flamingo Hill Tented Camp for
+            dinner and overnight (Breakfast, Lunch, Dinner & drinking water).
+        </p>
+        <br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 4 <span style="color: rgb(155, 192, 79);">Lake Nakuru - Lake Naivasha
+                    </span></b></a> </p>
+        <p>After breakfast, we will have an extensive game drive in Lake Nakuru National Park. Here you may spot a
+            variety of birdlife including some flamingoes as well as other birds of prey. You may also have the chance
+            to spot the white and the rare black rhino.
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 5 <span style="color: rgb(155, 192, 79);">Lake Naivasha- Amboseli
+                    </span></b></a> </p>
+        <p>After breakfast, depart Crater Lake Camp in Naivasha for Amboseli via Nairobi arriving in Amboseli in time
+            for lunch. Evening game drives will follow. Lunch, dinner and overnight at AA Lodge Amboseli.
+        </p><br>
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 6 <span style="color: rgb(155, 192, 79);">Amboseli Full Day
+                    </span></b></a> </p>
+        <p>After breakfast, we will start game drives in Amboseli N.P. armed with packed lunch to be served on top of
+            observation hill where you have amazing views of the park and Mt. Kilimanjaro.
+        </p><br>
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 7 <span style="color: rgb(155, 192, 79);">Amboseli/-Tsavo West
+                    </span></b></a> </p>
+        <p>After breakfast we will embark on a road trip via Chyulu Hills to Tsavo West National Park arriving late in
+            time for lunch.
+        </p><br>
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 8 <span style="color: rgb(155, 192, 79);">Tsavo West-Nairobi
+                    </span></b></a> </p>
+        <p>After breakfast we will have the last game drive to enjoy the wildlife for one last time before driving back
+            to Nairobi.
+        </p><br>
+
+        <h2 id="photos"><b>Photos</b></h2> <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{url_for('static', filename='images/amb.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/giraffe.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/naks.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        </div><br><br>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

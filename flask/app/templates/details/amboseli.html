@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div style="margin-top: -1.7%;">
+    <div style="background-image: url('/static/images/destine.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;">
+        <h1 style="font-weight:500; font-size:30px;padding-top: 15%;margin-left: 5%;">5 Days Amboseli, Tsavo West & East
+            Safari <br> Package</h1>
+    </div>
+</div>
+<div style="display: inline-flex; width: 100%; height: 7em;background-color: whitesmoke;padding: 3%;font-size: 15px;">
+    <p style="padding-right: 10%;padding-left: 5%;text-decoration: none;"><a href="#details"><b
+                style="color: black;">Details</b></a></p>
+    <p><a href="#itinery"><b style="color: black;">Itinery</b></a></p>
+    <p style="padding-left: 10%;"><a href="#photos"><b style="color: black;">Photos</b></a></p>
+</div>
+
+<div style="float: right; margin-right: 5%; text-align: center;background-color: rgb(250, 246, 246); 
+    margin-top: 25px;width:30%;">
+    <form action="reservation.php" method="post"><br>
+        <div class="container" style="text-align: start;">
+            <p style="color: tomato;font-size: 15px;">Price</p>
+            <h1 style="color: tomato;">From $1,580</h1><br>
+            <p style="font-size: 18px;">Booking Form</p>
+        </div>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined" style="float: left;">
+            <label for="checkin-date">Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined" style="padding-top: 10px;">
+            <a href="#">
+                <button type="submit">PROCEED TO BOOKING</button>
+            </a>
+        </div>
+
+    </form>
+    <hr>
+    <style>
+        div.elem-group {
+            margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+            width: 49%;
+            float: right;
+            margin-left: 1%;
+        }
+
+
+        div.elem-group.inlined input {
+            width: 95%;
+            display: inline-block;
+        }
+
+        button {
+            height: 50px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+    </style><br><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(187, 172, 172); margin-top: 30%;width: 100%;">
+        <div style="text-align: start; font-size: 14px;margin-left: 10px;">
+            <h1><b>Why Book With Us</b></h1><br>
+            <p><i class="fas fa-dollar-sign"></i>No-hassle best price guarantee</p>
+            <hr>
+            <p><i class="fas fa-headphones"></i>Customer care available 24/7</p>
+            <hr>
+            <p><i class="fas fa-star"></i>Hand-picked Tours & Activities</p>
+            <hr>
+            <p><i class="fas fa-globe"></i>Free Travel Insureance</p>
+            <hr>
+        </div>
+    </div><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(13, 179, 245); margin-top: 30%;width: 100%;">
+        <div style="text-align: center; font-size: 14px; color: white;">
+            <h1><b>Having any Question?</b></h1><br>
+            <p>Do not hesitate to give us a call. We are an expert team and we are happy to talk to you.</p><br>
+            <div style="color: yellow;">
+                <p><i class="fas fa-phone-alt"></i>+254 712 345</p><br>
+                <p><i class="far fa-envelope"></i><br> Customer@gmail.com</p><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="font-size: 15px;padding-left: 7%;width: 60%;">
+    <h1 id="details"><b>Tour Details</b></h1><br>
+    <h2>QUATATION:</h2>
+    <p>Based on a <b>private safari</b> of 4 travelers in the above mentioned accommodation: <b>USD 1580 per
+            person.</b>
+        <br><br><strong>NOTE: On the last day, you can opt to drive back to Nairobi for your flight to Mombasa. In
+            this
+            case, the quote will be USD 1520 per person.</strong><br><br>
+        <b>Program costs include:</b><br>
+    <ul>
+        <li>All Park Entry Fees</li>
+        <li>3 Meals a day</li>
+        <li>1litre of water per day during game drives</li>
+        <li>Services of a qualified English speaking driver guide</li>
+        <li>Transport based on our customized safari Vehicle with specially modified suspension, full-length
+            photographic pop up roof and seats designed with seat</li>
+        <li>Full board accommodation</li>
+    </ul>
+    <br>
+    <b>Program costs exclude:</b>
+    <ul>
+        <li>Visas fees , Inoculation and personal insurance</li>
+        <li>Domestic & International Flights and airline taxes</li>
+        <li>Optional activities and excursions/tips</li>
+        <li>Items of personal nature such as beverages, telephone, laundry, etc.</li>
+        <li>Nairobi accommodation before and after the safari</li>
+    </ul>
+    </p>
+    <h1 id="itinery"><b>Itinery</b></h1>
+    <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+            style="color: black;"><b>Day 1 <span style="color: rgb(155, 192, 79);">Nairobi-Amboseli National
+                    Park</span></b></a> </p>
+    <div>
+        <p>Pick up from your Nairobi Hotel/ residence at 0700hrs and
+            take the 6 hour drive to Amboseli National Park arriving in
+            time for a sumptuous buffet lunch. Lying below the most
+            famous symbol of Africa, Mt Kilimanjaro, and best known for
+            its great elephant herds, Amboseli National Park is one of the
+            iconic wildlife reserves in East Africa. Following lunch and a rest,
+            enjoy an afternoon game drive. Later drive back to your camp site. <br>
+            Dinner and overnight at Kimana Amboseli Tented Camp.
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 2 <span style="color: rgb(155, 192, 79);">Amboseli – Tsavo West
+                        National
+                        park
+                    </span></b></a> </p>
+
+        <p>Tsavo West and Tsavo East National Parks cover a massive 4% of
+            Kenya’s total land area. Tsavo East is the larger of the two,
+            both parks lies, equidistant between Nairobi and Mombasa. <br><br>
+            After an early breakfast, depart for Tsavo West National Park. Mzima
+            Springs, the chief marvel here is a favorite haunt of hippos and crocodiles.
+            Picnic lunch then proceed for an evening game drive to see large herds of elephants,
+            buffalo, common waterbuck, Zebra, eland, rhino and a wide variety of antelope.
+            Dinner and overnight at Severin Safari Camp.
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 3 <span style="color: rgb(155, 192, 79);">Tsavo West – Tsavo East
+                        National
+                        park
+                    </span></b></a> </p>
+        <p>We leave the camp soon after breakfast and proceed to Tsavo East National park. Game
+            is viewed as we exit the park. This park was famed for its large herds of
+            elephant covered in red dust and fine scenery. We visit the scenic Lugards Falls,
+            Mudanda Rocks (attracts elephants in the drier season) and Aruba Dam as we view
+            game if time permits. Dinner and overnight stay atSentrim Tsavo Camp.
+        </p>
+        <br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 4 <span style="color: rgb(155, 192, 79);">Tsavo East National park
+                    </span></b></a> </p>
+        <p>Full day spent exploring the park. Morning and afternoon game drives are offered. Meals and
+            overnight stay at Sentrim Tsavo Camp. The landscape in Tsavo East is flat and drier than
+            the west, despite having one of Kenya’s largest rivers flowing through the middle. Much of
+            the wildlife is concentrated on the Galana River, which has plentiful crocs and hippos.
+            Likewise, Kudus, waterbucks and dik-diks are common along the river banks.
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 5 <span style="color: rgb(155, 192, 79);">Tsavo East –Mombasa
+                    </span></b></a> </p>
+        <p>Early morning game drive. Soon after breakfast, we proceed to Mombasa
+            arriving at around 1530hrs. The safari ends with drop off at your
+            Mombasa Beach Hotel (Booked by yourself).
+        </p><br>
+
+        <h2 id="photos"><b>Photos</b></h2> <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{url_for('static', filename='images/amb.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/giraffe.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/naks.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        </div><br><br>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

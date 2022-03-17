@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+{% endblock %}
+
+{% block content %}
+<div style="margin-top: -1.7%;">
+    <div style="text-align: center; background-image: url('/static/images/destine.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;">
+        <h1 style="font-weight:1000; font-size:100px;padding-top: 7%;">Destinations</h1>
+        <p style="font-size: 30px;">Explore Tours By Destinations</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/giraffe.jpg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Tsavo West</p>
+                    <h3 class="content-title">2 Tours</h3> <br>
+                    <a href="/destinations/tsavo.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/Tiger.jpeg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Tsavo East</p>
+                    <h3 class="content-title">2 Tours</h3> <br>
+                    <a href="/destinations/tsavoeast.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/buffalo.jpg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Tanzania</p>
+                    <h3 class="content-title">0 Tours</h3> <br>
+                    <a href="/destinations/tanzania.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/cheeter.jpg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i>Samburu National Reserve</p>
+                    <h3 class="content-title">2 Tours</h3> <br>
+                    <a href="/destinations/samburu.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/giraffe.jpg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Nairobi</p>
+                    <h3 class="content-title">2 Tours</h3> <br>
+                    <a href="/destinations/nairobi.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/keny.jpeg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Mt Kilimanjaro </p>
+                    <h3 class="content-title">0 Tours</h3> <br>
+                    <a href="/destinations/kilimanjaro.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/buffalo.jpg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Lake Nakuru </p>
+                    <h3 class="content-title">2 Tours</h3> <br>
+                    <a href="/destinations/nakuru.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/keny.jpeg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Mt Kenya </p>
+                    <h3 class="content-title">2 Tours</h3> <br>
+                    <a href="/destinations/mtkenya.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image"
+                    src="{{url_for('static', filename='images/giraffe.jpg')}}">
+                <div class="content-details fadeIn-bottom">
+                    <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Masai Mara</p>
+                    <h3 class="content-title">2 Tours</h3> <br>
+                    <a href="/destinations/mara.html"
+                        style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% include 'footer.html' %}
+{% endblock %}

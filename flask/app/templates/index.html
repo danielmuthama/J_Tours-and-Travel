@@ -1,0 +1,243 @@
+{% extends 'base.html'%} {% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> {% endblock %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+
+    {% block content %}
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: -2.2em;">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{{url_for('static', filename='images/Diani.jpg')}}" style="width:100%;height: 500px;">
+            </div>
+
+            <div class="item">
+                <img src="{{url_for('static', filename='images/nairobinat.jpg')}}" style="width:100%;height: 500px;">
+            </div>
+
+            <div class="item">
+                <img src="{{url_for('static', filename='images/Tsavo_Salt-Lick.jpg')}}" style="width:100%;height: 500px;">
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    </div>
+    <div style="margin-top: 10px;">
+        <div class="search-container">
+            <form action="/action_page.php" style="text-align: center;background-color: rgba(2, 3, 3, 0.205);
+                height: 190px;margin-top: -1.52%;padding: 5%; font-size: 25px;">
+                <label for="Keyword" style="color: white;">Keyword</label>
+                <input type="text" placeholder="Search.." name="search" style="background-color: rgba(87, 78, 78, 0.24);border: none;">
+                <button type="submit" style="background-color: rgba(13, 246, 13, 0.281);"><i class="fa fa-search"
+                        style="padding-right: 20px;"></i></button>
+                <label for="Destination" style="padding-left: 50px;color: white;">Destination</label>
+                <select id="destine" name="destine" style="padding-right: 30px;background-color: rgb(87,78,78, 0.24);">
+                    <option value="Any">any</option>
+                    <option value="mara">Mara</option>
+                    <option value="Tsavo">Tsavo</option>
+                    <option value="Tanzania">Tanzania</option>
+                </select>
+                <input type="submit" style="margin-left: 50px;background-color: rgb(41, 171, 223);">
+            </form>
+        </div>
+        <div class="container">
+            <p><strong style="font-size: 30px;">POPULAR SAFARI PACKAGES</strong></p>
+            <div class="row" style="height: 250px;margin-bottom: 20em;">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url_for('static', filename='images/iten.jpg')}}" style="width:100%; height: 250px;">
+                        <div class="caption">
+                            <p><b>7 DAYS GREAT-RIFT VALLEY HOLIDAY</b></p>
+                            <div style="background-color: darkgray;height: 40px;width: 320px;">
+                                <p style="padding: 13px;">From <span style="padding-left:65%;">$1550</span></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url_for('static', filename='images/amboseli-elephants.jpg')}}" style="width:100%;height: 250px;">
+                        <div class="caption">
+                            <p><b>7 DAYS ABERDARES, LAKE NAKURU, MASAI MARA & MOMBASA HOLIDAY</b></p>
+                            <div style="background-color: darkgray;height: 40px;width: 320px;">
+                                <p style="padding: 13px;">From <span style="padding-left:65%;">$1550</span></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url_for('static', filename='images/Diani.jpg')}}" style="width:100%;height: 250px;">
+                        <div class="caption">
+                            <p><b>7 DAYS MOMBASA/COAST HOLIDAY</b></p>
+                            <div style="background-color: darkgray;height: 40px; width: 320px;">
+                                <p style="padding: 13px;">From <span style="padding-left:65%;">$1550</span></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p><strong style="font-size: 30px;">TOP VACATION TOURS</strong> <span style="padding-left: 20%;"><a
+                        href="/destinations.html">/
+                        View All Tours</a></span></p>
+
+            <div class="row" style="height: 250px;margin-bottom: 10em;">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url_for('static', filename='images/Wildlife-Safari.jpg')}}" style="width:100%; height: 250px;">
+                        <div class="caption">
+                            <p><b>7 DAYS ABERDARES HOLIDAY</b></p>
+                            <div style="background-color: darkgray;height: 40px;width: 320px;">
+                                <p style="padding: 13px;">From <span style="padding-left:65%;">$1850</span></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url_for('static', filename='images/buffalo.jpg')}}" style="width:100%;height: 250px;">
+                        <div class="caption">
+                            <p><b>7 DAYS MASAI MARA HOLIDAY</b></p>
+                            <div style="background-color: darkgray;height: 40px;width: 320px;">
+                                <p style="padding: 13px;">From <span style="padding-left:65%;">$1700</span></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url_for('static', filename='images/giraffe.jpg')}}" style="width:100%;height: 250px;">
+                        <div class="caption">
+                            <p><b>7 DAYS TSAVO HOLIDAY</b></p>
+                            <div style="background-color: darkgray;height: 40px; width: 320px;">
+                                <p style="padding: 13px;">From <span style="padding-left:65%;">$1450</span></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1><b style="font-size: 30px; padding-left: 35%;">TRAVEL COMFY</b></h1>
+            <p style="text-align: center;font-size: xx-large;">the safari</p>
+            <div>
+                <p>
+                    <div class="row no-padding" style="padding: 0; float: right;">
+                        <div class="col md-4 my-styles" style="width:400px;height:170px;margin-left:25px;border-style:solid;border-color: darkgreen;">
+                            <p><b>Trip Helper</b></p>
+                            <p><strong>Tour Zone</strong></p>
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book.</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 16px;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="content">
+                        <div class="content-overlay"></div> <img class="content-image" style="width: 300px;height: 200px;" src="{{url_for('static', filename='images/Lake-Nakuru.jpg')}}">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Lake Nakuru </p>
+                            <a href="/destinations/nakuru.html" style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                        <div class="content-overlay"></div> <img class="content-image" style="width: 300px;height: 200px;" src="{{url_for('static', filename='images/Mt.Kenya.jpg')}}">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Mt Kenya
+                            </p>
+                            <a href="/destinations/mtkenya.html" style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                        <div class="content-overlay"></div> <img class="content-image" style="width: 300px;height: 200px;" src="{{url_for('static', filename='images/Maasai_Migrations.jpg')}}">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Masai Mara
+                            </p>
+                            <a href="/destinations/mara.html" style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="content">
+                        <div class="content-overlay"></div> <img class="content-image" style="width: 300px;height: 200px;" src="{{url_for('static', filename='images/Tsavo_Salt-Lick.jpg')}}">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Tsavo National Reserve </p>
+                            <a href="/destinations/tsavoeast.html" style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                        <div class="content-overlay"></div> <img class="content-image" style="width: 300px;height: 200px;" src="{{url_for('static', filename='images/Samburu.jpg')}}">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Samburu National Reserve
+                            </p>
+                            <a href="/destinations/samburu.html" style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                        <div class="content-overlay"></div> <img class="content-image" style="width: 300px;height: 200px;" src="{{url_for('static', filename='images/nairobinat.jpg')}}">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text" style="font-size: 25px;"><i class="fa fa-map-marker"></i> Nairobi
+                            </p>
+                            <a href="/destinations/nairobi.html" style="text-decoration: none; font-weight: 1000;font-size: 20px;">VIEW ALL TOURS</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-fluid" style="height: 10rem; background-color: rgb(19, 126, 43);margin-top: 5rem; display: inline-flex;padding: 40px;color: white; width: 100%;">
+            <p style="margin-right: 20%;">400 Visitors</p>
+            <p>Award Winning</p>
+            <p style="margin-left: 20%;">Secure Payment</p>
+            <p style="margin-left: 20%;">Exiting Packages</p>
+        </div> -->
+        <div class="container-fluid"><br><br>
+            <h3 style="text-align: center;">REVIEWS FROM OUR CLIENTS</h3>
+            <p style="text-align: center;">These are the reviews...........</p>
+        </div>
+        <br><br><br> {% include 'footer.html' %} {% endblock %}
+
+</body>
+
+</html>

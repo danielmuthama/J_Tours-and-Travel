@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div style="margin-top: -1.7%;">
+    <div style="background-image: url('/static/images/destine.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;">
+        <h1 style="font-weight:500; font-size:30px;padding-top: 15%;margin-left: 5%;">3 Days Safari in the Wild Side:
+            Hell’s Gate </h1>
+    </div>
+</div>
+<div style="display: inline-flex; width: 100%; height: 7em;background-color: whitesmoke;padding: 3%;font-size: 15px;">
+    <p style="margin-left: 5%;"><a href="#itinery"><b style="color: black;">Itinery</b></a></p>
+    <p style="padding-left: 10%;"><a href="#photos"><b style="color: black;">Photos</b></a></p>
+</div>
+
+<div style="float: right; margin-right: 5%; text-align: center;background-color: rgb(250, 246, 246); 
+    margin-top: 25px;width:30%;">
+    <form action="reservation.php" method="post"><br>
+        <div class="container" style="text-align: start;">
+            <p style="color: tomato;font-size: 15px;">Price</p>
+            <h1 style="color: tomato;">From $2,050</h1><br>
+            <p style="font-size: 18px;">Booking Form</p>
+        </div>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined" style="float: left;">
+            <label for="checkin-date">Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined" style="padding-top: 10px;">
+            <a href="#">
+                <button type="submit">PROCEED TO BOOKING</button>
+            </a>
+        </div>
+
+    </form>
+    <hr>
+    <style>
+        div.elem-group {
+            margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+            width: 49%;
+            float: right;
+            margin-left: 1%;
+        }
+
+
+        div.elem-group.inlined input {
+            width: 95%;
+            display: inline-block;
+        }
+
+        button {
+            height: 50px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+    </style><br><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(187, 172, 172); margin-top: 30%;width: 100%;">
+        <div style="text-align: start; font-size: 14px;margin-left: 10px;">
+            <h1><b>Why Book With Us</b></h1><br>
+            <p><i class="fas fa-dollar-sign"></i>No-hassle best price guarantee</p>
+            <hr>
+            <p><i class="fas fa-headphones"></i>Customer care available 24/7</p>
+            <hr>
+            <p><i class="fas fa-star"></i>Hand-picked Tours & Activities</p>
+            <hr>
+            <p><i class="fas fa-globe"></i>Free Travel Insureance</p>
+            <hr>
+        </div>
+    </div><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(13, 179, 245); margin-top: 30%;width: 100%;">
+        <div style="text-align: center; font-size: 14px; color: white;">
+            <h1><b>Having any Question?</b></h1><br>
+            <p>Do not hesitate to give us a call. We are an expert team and we are happy to talk to you.</p><br>
+            <div style="color: yellow;">
+                <p><i class="fas fa-phone-alt"></i>+254 712 345</p><br>
+                <p><i class="far fa-envelope"></i><br> Customer@gmail.com</p><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="font-size: 15px;padding-left: 7%;width: 60%;">
+    <h1 id="itinery"><b>Itinery</b></h1>
+    <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+            style="color: black;"><b>Day 1 <span style="color: rgb(155, 192, 79);">Nairobi-Hell’s Gate</span></b></a>
+    </p>
+    <div>
+        <p>Our Safari starts by driving to Hell’s Gate National Park. Hell’s Gate National Park lies to the south of
+            Lake Naivasha in Kenya, North West of Nairobi. The park, which is mainly, comprised of savannah ecosystem
+            harbors a wide variety of wildlife. There are over 100 species of birds in the park, including vultures,
+            Verreaux’s Eagles, augur buzzard, and swifts. African buffalo, zebra, eland, hartebeest, Thomson’s gazelle,
+            and baboons are also common. The park is also home to klipspringer antelope.
+
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 2 <span style="color: rgb(155, 192, 79);">Naivasha-Lake Nakuru National
+                        Park
+                    </span></b></a> </p>
+
+        <p>The day will start with an early morning pick up then drive to Lake Nakuru National Park, Across the equator,
+            southwards of Bogoria, lies the Rift Valley’s most famous bird Sanctuary-Lake Nakuru- Known all over the
+            world for its flamingos. The lake’s water is alkaline and it is recognized as being one of the natural
+            wonders of the world.
+        </p><br>
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 3 <span style="color: rgb(155, 192, 79);">Lake Nakuru National Park-Masaai
+                        Mara National Reserve
+                    </span></b></a> </p>
+
+        <p>The day begins with an early morning drive to Maasai Mara National Reserve. The Mara holds on as one of the
+            few places left on earth where wildlife still lives comparatively undisturbed, in the numbers that once
+            roamed the plains and forests of Africa. As the northern tip of the vast Serengeti ecosystem, the Mara hosts
+            the spectacular seasonal migration of many thousands of Wildebeest, Zebras and attendant predators. Arrive
+            in time for lunch then have an afternoon game drive. <br> Dinner and Overnight Stay: Wajee Mara Camp,
+            Mid-range tented camp located inside Masaai Mara National Reserve
+        </p><br>
+
+
+
+        <h2 id="photos"><b>Photos</b></h2> <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{url_for('static', filename='images/amb.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/giraffe.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/naks.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        </div><br><br>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'base.html' %} {% block content %}
+
+<div style="width: 40%;margin-left: 10%;font-size: 18px;margin-bottom: 10%;">
+    <p>We offer car hire at affordable rates. We have 4×4 vehicles, Landcruiser V8 and Prados, 28/33 buses, saloon vehicles and others. <br><br>
+        <b> Pricing:</b> <br>
+        <ul>
+            <li>Rav 4 – from Ksh 6,000</li>
+            <li>Harrier & Xtrail – from Ksh 7,000</li>
+            <li>Hilux & Double cabs – from Ksh 10,000</li>
+            <li>Prado TRJ 120 – from Ksh 12,000</li>
+            <li>Prado TRJ 150 – from Ksh 15,000</li>
+            <li>Landcruiser V8 (Chauffer-driven) – from Ksh 25,000</li>
+            <li>Landcruiser V8 (Chauffer-driven) – from Ksh 25,000</li>
+            <li>28 Seater Bus (Chauffer-driven) – from Ksh 25,000</li>
+        </ul>
+    </p>
+</div>
+<div style="float: right;margin-top: -40%;">
+    <h2><b style="margin-left: 0rem;color: brown;">
+            Request For Car Hire Here</b></h2><br><br>
+    <div class="row">
+        <div class="col-50">
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Your Names</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="Official names">
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">Email</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="Email">
+                        </div>
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Phone Number</label>
+                            <input type="text" id="mobile" name="expyear" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">Nationality</label>
+                            <input type="text" id="nationality" name="cvv" placeholder="nationality">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Pick Up date</label>
+                            <input type="text" id="location" name="expyear" placeholder="your preffered pick up location">
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">Return Date</label>
+                            <input type="text" id="date" name="cvv" placeholder="returning date">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Car Type</label>
+                            <input type="text" id="car" name="expyear" placeholder="preffered car">
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">Destination</label>
+                            <input type="text" id="destination" name="cvv" placeholder="destination">
+                        </div>
+                    </div><br>
+                    <button class="btn">Book</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+    
+    .col-50 {
+        -ms-flex: 50%;
+        flex: 50%;
+    }
+    
+    .col-75 {
+        -ms-flex: 75%;
+        flex: 75%;
+    }
+    
+    .col-25,
+    .col-50,
+    .col-75 {
+        padding: 0 16px;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 20%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    
+    .btn:hover {
+        background-color: #45a049;
+    }
+    
+    a {
+        color: #2196F3;
+    }
+</style>
+
+
+{% include 'footer.html' %} {% endblock %}

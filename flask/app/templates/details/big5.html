@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div style="margin-top: -1.7%;">
+    <div style="background-image: url('/static/images/destine.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;">
+        <h1 style="font-weight:500; font-size:30px;padding-top: 15%;margin-left: 5%;">5 Days Amboseli, Tsavo West & East
+            Safari <br> Package</h1>
+    </div>
+</div>
+<div style="display: inline-flex; width: 100%; height: 7em;background-color: whitesmoke;padding: 3%;font-size: 15px;">
+    <p style="padding-right: 10%;padding-left: 5%;text-decoration: none;"><a href="#details"><b
+                style="color: black;">Details</b></a></p>
+    <p><a href="#itinery"><b style="color: black;">Itinery</b></a></p>
+    <p style="padding-left: 10%;"><a href="#photos"><b style="color: black;">Photos</b></a></p>
+</div>
+
+<div style="float: right; margin-right: 5%; text-align: center;background-color: rgb(250, 246, 246); 
+    margin-top: 25px;width:30%;">
+    <form action="reservation.php" method="post"><br>
+        <div class="container" style="text-align: start;">
+            <p style="color: tomato;font-size: 15px;">Price</p>
+            <h1 style="color: tomato;">From $1,580</h1><br>
+            <p style="font-size: 18px;">Booking Form</p>
+        </div>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined" style="float: left;">
+            <label for="checkin-date">Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined" style="padding-top: 10px;">
+            <a href="#">
+                <button type="submit">PROCEED TO BOOKING</button>
+            </a>
+        </div>
+
+    </form>
+    <hr>
+    <style>
+        div.elem-group {
+            margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+            width: 49%;
+            float: right;
+            margin-left: 1%;
+        }
+
+
+        div.elem-group.inlined input {
+            width: 95%;
+            display: inline-block;
+        }
+
+        button {
+            height: 50px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+    </style><br><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(187, 172, 172); margin-top: 30%;width: 100%;">
+        <div style="text-align: start; font-size: 14px;margin-left: 10px;">
+            <h1><b>Why Book With Us</b></h1><br>
+            <p><i class="fas fa-dollar-sign"></i>No-hassle best price guarantee</p>
+            <hr>
+            <p><i class="fas fa-headphones"></i>Customer care available 24/7</p>
+            <hr>
+            <p><i class="fas fa-star"></i>Hand-picked Tours & Activities</p>
+            <hr>
+            <p><i class="fas fa-globe"></i>Free Travel Insureance</p>
+            <hr>
+        </div>
+    </div><br><br>
+
+    <div style="float: right; text-align: center;background-color: rgb(13, 179, 245); margin-top: 30%;width: 100%;">
+        <div style="text-align: center; font-size: 14px; color: white;">
+            <h1><b>Having any Question?</b></h1><br>
+            <p>Do not hesitate to give us a call. We are an expert team and we are happy to talk to you.</p><br>
+            <div style="color: yellow;">
+                <p><i class="fas fa-phone-alt"></i>+254 712 345</p><br>
+                <p><i class="far fa-envelope"></i><br> Customer@gmail.com</p><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="font-size: 15px;padding-left: 7%;width: 60%;">
+    <h1 id="details"><b>Tour Details</b></h1><br>
+    <p>This 8 days safari takes you to Nairobi City, Samburu National Reserve, Lake Nakuru National Park, Masai Mara
+        National Reserve, Lake Naivasha and Amboseli National Park, touching all the main tourist attractions in Kenya.
+        It starts with a day excursion in Nairobi where you will visit opharned elephant calves at DSWT, then visit
+        Giraffe Center for a Rothschild’s giraffe kiss and then at Bomas of Kenya where you will enjoy Kenya traditional
+        dances and our rich culture. You will then proceed with great adventure to Kenya’s finest parks that leaves
+        travelers fully satisfied especially with all the inclusions, sightseeing and game viewing, this great safari is
+        excellent value for money and a splendid source of refreshment.</p><br>
+    <h2><b>Highlights</b></h2>
+    <ul>
+        <li>Interact with elephant calves</li>
+        <li>Kiss & feed Rothschild’s giraffe</li>
+        <li>Dance with locals at Bomas of Kenya</li>
+        <li>Visit almost all main wildlife parks in Kenya</li>
+        <li>Interact with several Kenyan communities & wildlife</li>
+        <li>Witness the 8th world wonder during wildebeest migration</li>
+    </ul>
+
+    <h1 id="itinery"><b>Itinery</b></h1>
+    <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+            style="color: black;"><b>Day 1 <span style="color: rgb(155, 192, 79);">NAIROBI EXCURSION</span></b></a> </p>
+    <div>
+        <p>On your arrival at the airport you are met by our representative, drive to Swiss Lenana Mount Hotel and later
+            pick up at 9-10am for David Sheldrick Wildlife Trust, where you will interact with orphaned baby elephants
+            (11am12pm).
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 2 <span style="color: rgb(155, 192, 79);">NAIROBI- SAMBURU
+                    </span></b></a> </p>
+
+        <p>Wake up early and take your breakfast by 7am, leave Nairobi and drive north to Samburu National Reserve to
+            arrive at around 1400 hours in time for lunch at Samburu Sopa Lodge. After lunch relax and refresh then
+            proceed for evening game drive in the park famous as the place for the Samburu semi-nomadic tribesmen, the
+            Reticulated Giraffe, the Grevy’s Zebra, Gerenuk, Beisa Oryx, Somali Ostrich and a host of the big game
+            including elephant and lion. Dinner and overnight at Samburu Sopa Lodge.
+        </p><br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 3 <span style="color: rgb(155, 192, 79);">FULL DAY IN SAMBURU
+                    </span></b></a> </p>
+        <p>Wake up early and take a cup of coffee then proceed for an early game drive in this lush and region of North
+            then return to the lodge for main breakfast and relax by swimming pool or at your own leisure till later in
+            the evening for another game drive. The water of Ewaso Ny’iro River attracts a profusion of game. This area
+            is known for the rare species of wildlife that are endemic and only found in Northern Kenya (Reticulated
+            Giraffe, Grevy’s Zebra, Gerenuk, Beisa Oryx and Somali Ostrich ).
+        </p>
+        <br>
+
+        <p style="background-color: whitesmoke; height: 3em;padding: 12px;font-size: 1.2em;"> <a href=""
+                style="color: black;"><b>Day 4 <span style="color: rgb(155, 192, 79);">SAMBURU- LAKE NAKURU
+                    </span></b></a> </p>
+        <p>After breakfast depart Samburu close the equator as you drive southwards to Lake Nakuru National park. Drive
+            through scenic Thomson falls, rift valley view point and Menengai crater to arrive in Flamingo Hill Camp in
+            time for lunch.
+        </p><br>
+
+        <h2 id="photos"><b>Photos</b></h2> <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{url_for('static', filename='images/amb.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/giraffe.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+
+                <div class="item">
+                    <img src="{{url_for('static', filename='images/naks.jpg')}}" style="width:100%;height: 23em;">
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        </div><br><br>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

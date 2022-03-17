@@ -1,0 +1,64 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static',filename='css/nav.css')}}">
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
+
+
+
+<nav class="navbar navbar-default bar" style="background-color: rgb(22, 22, 41);">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+            <h1 class="navbar-brand ml3" href="/" style="float: left;margin-top: 0;font-size: 30px;color: rgb(7, 255, 243);">
+                TOURS & TRAVEL</h1>
+
+            <ul class="nav navbar" style="display: inline-flex;font-size: 15px;padding-left: 15%;">
+                <li><a href="/" style="color: white;">Home</a></li>
+                <li><a href="{{ url_for('main.destinations')}}" style="color: white;">destinations</a></li>
+                <li><a href="{{ url_for('main.carhire')}}" style="color: white;">Car Hire</a></li>
+                <li><a href="{{ url_for('main.contact')}}" style="color: white;">Contact Us</a></li>
+            </ul>
+
+            <ul class="nav navbar-right" style="display: inline-flex;margin-top: 5px;font-size: 15px;">
+                <div class="topnav">
+                    {% if session.logged_in %}
+                    <a href="/logout/">Logout</a> {% else %}
+                    <a href="/login/">Login</a>
+                    <a href="/register/">Sign up</a> {% endif %}
+                </div>
+                <hr> {% if session['logged_in'] %}
+                <h5>Welcome, {{session['username'] }}</h5>
+                {% endif %}
+
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <script>
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i + 1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+</nav>
